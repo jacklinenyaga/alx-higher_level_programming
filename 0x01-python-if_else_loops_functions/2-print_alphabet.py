@@ -1,23 +1,7 @@
-/*
- * File: 2-print_alphabet.c
- * Auth: Brennan D Baraban
- */
+#!/usr/bin/python3
+# 2-print_alphabet.py
+# Brennan D Baraban <375@holbertonschool.com>
 
-#include <stdio.h>
-
-/**
- * main - Prints the alphabet in lowercase.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	char letter;
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-		putchar(letter);
-
-	putchar('\n');
-
-	return (0);
-}
+"""Print the alphabet in lowercase, not followed by a new line."""
+for letter in range(97, 123):
+    print("{}".format(chr(letter)), end="")
